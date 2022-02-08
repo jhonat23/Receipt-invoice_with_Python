@@ -11,11 +11,11 @@ lst = list()
 
 #datos ejemplo
 rot_cliente = ['Nombres', 'Apellidos', 'Documento', 'Teléfono', 'Dirección', 'Ciudad', 'e-mail']
-data = ['luis Carlos', 'Leguizamon Rojas', '1018434845', '3183544433', 'cra 3b # 6 -03', 'Tunja, Boyaca, Boyaca', 'luiska147@gmail.com']# esta lista es de prueba, se deben migrar los datos desde ventas.py
+data = ['John', 'Doe', '111111111', '310310310', '5555 W Nice Street', 'Nashville, Tennesse, USA', 'myemail@email.com']# esta lista es de prueba, se deben migrar los datos desde ventas.py
 cliente = [rot_cliente,data]
 
 #inicio creación de archivo
-c = canvas.Canvas("Recibo No. XXX.pdf")
+c = canvas.Canvas("Receipt No. XXX.pdf")
 
 #------------------encabezado
 c.setFont("Times-Roman", 12)
@@ -98,13 +98,13 @@ c.drawString(50, h-710, "Convserva este documento en caso de requerir un garant�
 text = c.beginText(0, h-800)
 text.setFont("Times-Roman", 9)
 text.moveCursor(180, 0)
-text.textLine("Yodomotics Carrera 9 #2E-04 piso tres Pereira, Risaralda")
+text.textLine("Company address, state and country")
 text.moveCursor(-3, 0)
-text.textLine("jjrmantenimientos@gmail.com/dirnegocios.jjr@gmail.com")
+text.textLine("company email")
 text.moveCursor(80, 0)
-text.textLine("3102635621")
+text.textLine("Contact Number")
 text.moveCursor(-18, 0)
-text.textLine("jjr.com.co/yodomotics")
+text.textLine("web page")
 c.drawText(text)
 #Pasar a la siguiente página
 c.showPage()
