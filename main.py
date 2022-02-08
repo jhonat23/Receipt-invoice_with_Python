@@ -11,7 +11,7 @@ lst = list()
 
 #datos ejemplo
 rot_cliente = ['Nombres', 'Apellidos', 'Documento', 'Teléfono', 'Dirección', 'Ciudad', 'e-mail']
-data = ['John', 'Doe', '111111111', '310310310', '5555 W Nice Street', 'Nashville, Tennesse, USA', 'myemail@email.com']# esta lista es de prueba, se deben migrar los datos desde ventas.py
+data = ['John', 'Doe', '111111111', '310310310', '5555 W Nice Street', 'Nashville, Tennesse, USA', 'myemail@email.com']# test list
 cliente = [rot_cliente,data]
 
 #inicio creación de archivo
@@ -23,7 +23,7 @@ c.drawString(50, h-100, "¡Hola! Este es tu recibo en el cual puedes ver el deta
 #c.setFillColorRGB(1, 0, 0)
 c.line(w-580, h-110, w-15, h-110)
 c.line(w-580, h-105, w-15, h-105)
-c.drawImage("C:\image\Logo Yodomotics.png", 50, h - 80, width=100, height=80)
+c.drawImage("C:\image\Company-logo.png", 50, h - 80, width=100, height=80)
 c.rect(40, h - 195, 320, 80)
 c.rect(400, h - 180, 160, 60)
 
