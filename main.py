@@ -6,7 +6,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, Paragraph, TableStyle
 from reportlab.lib import colors
 from datetime import datetime
 w, h = A4
-ylisti = h - 215
+ylisti = h - 215 #value for grid
 
 #Example data
 data = ['John', 'Doe', '111111111', '310310310', '5555 W Nice Street', 'Nashville, Tennesse, USA', 'myemail@email.com']# test list
